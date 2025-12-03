@@ -1,0 +1,333 @@
+﻿Column1;Column2
+Was ist der Zweck des `print()`-Befehls in Python?;Der `print()`-Befehl gibt Werte oder Objekte auf der Konsole aus.
+Wie weist man einer Variablen in Python einen Wert zu?;`variable_name = value`
+Nenne die vier grundlegenden numerischen Datentypen in Python.;`int` (Ganzzahl), `float` (Gleitkommazahl), `complex` (komplexe Zahl), `bool` (Boolescher Wert: True/False).
+Was ist der Datentyp für Text in Python?;`str` (String).
+Wie deklariert man einen String in Python?;"Mit einfachen (`'...'`) oder doppelten Anführungszeichen (`""...""`)."
+Was ist der Datentyp einer Liste in Python?;Eine geordnete, veränderliche Sammlung von Elementen, die verschiedene Datentypen enthalten kann.
+Wie erstellt man eine leere Liste?;`my_list = []` oder `my_list = list()`
+Wie greift man auf das erste Element einer Liste namens `data` zu?;`data[0]`
+Wie greift man auf das letzte Element einer Liste namens `data` zu?;`data[-1]`
+Wie fügt man ein Element am Ende einer Liste `my_list` hinzu?;`my_list.append(element)`
+Wie entfernt man ein Element aus einer Liste `my_list` anhand seines Wertes?;`my_list.remove(value)`
+Was ist der Datentyp eines Tupels in Python?;Eine geordnete, **unveränderliche** Sammlung von Elementen.
+Wann würde man ein Tupel anstelle einer Liste verwenden?;Wenn die Sammlung von Elementen sich nicht ändern soll (z.B. als Dictionary-Schlüssel, oder wenn Datenintegrität wichtig ist).
+Wie erstellt man ein Tupel?;`my_tuple = (1, 2, 3)` oder `my_tuple = 1, 2, 3`
+Was ist der Datentyp eines Sets in Python?;Eine ungeordnete Sammlung von **eindeutigen** Elementen.
+Wann wäre ein Set nützlich?;Um Duplikate zu entfernen oder für schnelle Überprüfungen der Mitgliedschaft (`in` Operator).
+Wie erstellt man ein Set?;`my_set = {1, 2, 3}` oder `my_set = set([1, 2, 3])`
+Was ist der Datentyp eines Dictionarys in Python?;Eine ungeordnete Sammlung von Schlüssel-Wert-Paaren.
+Wie erstellt man ein leeres Dictionary?;`my_dict = {}` oder `my_dict = dict()`
+Wie fügt man ein Schlüssel-Wert-Paar zu einem Dictionary `my_dict` hinzu?;`my_dict['key'] = value`
+Wie greift man auf den Wert eines Schlüssels 'name' in `my_dict` zu?;`my_dict['name']`
+Welchen Fehler erhält man, wenn man versucht, auf einen nicht existierenden Schlüssel in einem Dictionary zuzugreifen?;`KeyError`
+Wie prüft man, ob ein Schlüssel in einem Dictionary vorhanden ist, um einen `KeyError` zu vermeiden?;`if 'key' in my_dict:` oder `my_dict.get('key', default_value)`
+Was ist der Zweck des `len()`-Befehls?;Gibt die Länge (Anzahl der Elemente) eines Objekts zurück (z.B. Liste, String, Dictionary).
+Was ist der Zweck des `type()`-Befehls?;Gibt den Datentyp eines Objekts zurück.
+Nenne die 5 wichtigsten arithmetischen Operatoren.;`+`, `-`, `*`, `/`, `**` (Potenz), `//` (Ganzzahl-Division), `%` (Modulo).
+Was ist der Unterschied zwischen `/` und `//`?;`/` führt eine Gleitkommadivision durch, `//` eine Ganzzahldivision (rundet ab).
+Was ist das Ergebnis von `10 % 3`?;`1` (der Rest von 10 geteilt durch 3).
+Nenne die 3 wichtigsten Vergleichsoperatoren.;`==` (gleich), `!=` (ungleich), `<` (kleiner als), `>` (größer als), `<=` (kleiner oder gleich), `>=` (größer oder gleich).
+Was ist das Ergebnis von `5 == '5'`?;`False` (unterschiedliche Datentypen).
+Was ist das Ergebnis von `True and False`?;`False`
+Was ist das Ergebnis von `True or False`?;`True`
+Was ist das Ergebnis von `not True`?;`False`
+Schreibe eine `if`-Anweisung, die prüft, ob `x` größer als 10 ist.;`if x > 10:`
+Schreibe eine `if-elif-else`-Anweisung, die prüft, ob eine Zahl positiv, negativ oder Null ist.;`if num > 0: ... elif num < 0: ... else: ...`
+Wie iteriert man über die Elemente einer Liste `items` mit einer `for`-Schleife?;`for item in items:`
+Wie iteriert man über Zahlen von 0 bis 4 mit einer `for`-Schleife?;`for i in range(5):`
+Wie iteriert man über Index und Wert einer Liste `items` gleichzeitig?;`for index, value in enumerate(items):`
+Was ist der Zweck einer `while`-Schleife?;Wiederholt einen Codeblock, solange eine Bedingung wahr ist.
+Schreibe eine `while`-Schleife, die Zahlen von 0 bis 2 ausgibt.;"`count = 0 ;  while count < 3: print(count);  count += 1`"
+Was bewirkt der `break`-Befehl in einer Schleife?;Beendet die aktuelle Schleife sofort.
+Was bewirkt der `continue`-Befehl in einer Schleife?;Springt zur nächsten Iteration der Schleife.
+Wie definiert man eine Funktion in Python?;`def function_name(parameters):`
+Wie gibt eine Funktion einen Wert zurück?;Mit dem `return`-Schlüsselwort.
+Was ist der Unterschied zwischen Argumenten und Parametern einer Funktion?;Parameter sind die Namen in der Funktionsdefinition,  Argumente sind die tatsächlichen Werte, die beim Aufruf übergeben werden.
+Definiere eine Funktion `multiply(a, b)`, die das Produkt von `a` und `b` zurückgibt.;`def multiply(a, b): return a * b`
+"Was ist ein ""Docstring"" und wo wird er platziert?";Ein String direkt unter der Funktionsdefinition, der die Funktion dokumentiert.
+Wie ruft man eine Funktion namens `greet()` ohne Argumente auf?;`greet()`
+Was ist der Standardwert eines Parameters in einer Funktion? Gib ein Beispiel.;Ein vordefinierter Wert, wenn beim Aufruf kein Argument übergeben wird. `def greet(name='Gast'):`
+Was ist der Unterschied zwischen Positional Arguments und Keyword Arguments?;Positional Arguments werden nach ihrer Reihenfolge übergeben,  Keyword Arguments werden mit dem Parameternamen (`param=value`) übergeben.
+Was sind `*args` in einer Funktionsdefinition?;Ermöglicht das Übergeben einer variablen Anzahl von nicht-benannten (positionalen) Argumenten als Tupel.
+Was sind `**kwargs` in einer Funktionsdefinition?;Ermöglicht das Übergeben einer variablen Anzahl von benannten (Keyword) Argumenten als Dictionary.
+"Was ist der ""Scope"" einer Variablen in Python?";Der Bereich, in dem eine Variable sichtbar und zugänglich ist (z.B. globaler Scope, lokaler Scope einer Funktion).
+"Was bedeutet es, wenn eine Variable ""immutable"" (unveränderlich) ist? Nenne Beispiele.";Ihr Wert kann nach der Erstellung nicht mehr geändert werden (z.B. Zahlen, Strings, Tupel).
+"Was bedeutet es, wenn eine Variable ""mutable"" (veränderlich) ist? Nenne Beispiele.";Ihr Wert kann nach der Erstellung geändert werden (z.B. Listen, Dictionaries, Sets).
+Erkläre List Comprehensions mit einem Beispiel.;Eine kompakte Art, Listen zu erstellen. `squares = [x**2 for x in range(5)]`
+Erkläre Dictionary Comprehensions mit einem Beispiel.;Eine kompakte Art, Dictionaries zu erstellen. `squares_dict = {x: x**2 for x in range(5)}`
+Wie öffnet man eine Datei zum Lesen in Python?;`with open('filename.txt', 'r') as file:`
+Wie öffnet man eine Datei zum Schreiben in Python?;`with open('filename.txt', 'w') as file:`
+Was ist der Vorteil der Verwendung von `with open(...)`?;Stellt sicher, dass die Datei nach Gebrauch automatisch geschlossen wird, auch bei Fehlern.
+Wie liest man alle Zeilen aus einer Datei?;`file.readlines()`
+Wie schreibt man einen String `text` in eine Datei?;`file.write(text)`
+Was ist ein `try-except`-Block und wofür wird er verwendet?;Zum Abfangen und Behandeln von Fehlern (Exceptions) im Code.
+Schreibe einen `try-except`-Block für eine `ValueError`.;`try: ... except ValueError: ...`
+Was ist der Unterschied zwischen einem `NameError` und einem `TypeError`?;`NameError` tritt auf, wenn ein nicht definierter Variablenname verwendet wird , `TypeError` tritt auf, wenn eine Operation auf einem ungeeigneten Datentyp ausgeführt wird.
+Was ist der Zweck des `finally`-Blocks in der Fehlerbehandlung?;Der Code im `finally`-Block wird immer ausgeführt, egal ob ein Fehler auftrat oder nicht (oft für Aufräumarbeiten).
+Was ist ein Modul in Python?;Eine Datei, die Python-Code (Funktionen, Klassen, Variablen) enthält und importiert werden kann.
+Wie importiert man ein Modul namens `math`?;`import math`
+Wie importiert man nur die Funktion `sqrt` aus dem Modul `math`?;`from math import sqrt`
+Wie importiert man ein Modul mit einem Alias?;`import math as mt`
+Was ist ein Paket in Python?;Eine Sammlung von Modulen, die in einem Verzeichnis organisiert sind (mit einer `__init__.py`-Datei).
+Wie importiert man NumPy konventionell?;`import numpy as np`
+Was ist ein NumPy Array?;Die zentrale Datenstruktur in NumPy, ein mehrdimensionales Array von Werten des gleichen Datentyps.
+Was ist der Hauptvorteil von NumPy Arrays gegenüber Python Listen für numerische Berechnungen?;Viel schneller und speichereffizienter, ermöglicht Vektorisierung von Operationen.
+Erstelle ein 1D-NumPy Array aus der Python Liste `[1, 2, 3, 4]`;`np.array([1, 2, 3, 4])`
+Erstelle ein 2D-NumPy Array (Matrix) der Größe 2x3 voller Nullen.;`np.zeros((2, 3))`
+Erstelle ein 3x3 Identitätsmatrix.;`np.eye(3)`
+Erstelle ein Array mit 5 Werten, die gleichmäßig zwischen 0 und 10 verteilt sind.;`np.linspace(0, 10, 5)`
+Erstelle ein Array mit Werten von 0 bis 9 (ausschließlich).;`np.arange(10)`
+Was gibt `arr.shape` zurück?;Die Dimensionen (Anzahl der Zeilen, Spalten usw.) des Arrays als Tupel.
+Was gibt `arr.dtype` zurück?;Den Datentyp der Elemente im Array.
+Wie greift man auf das Element in der zweiten Zeile und dritten Spalte eines 2D-Arrays `matrix` zu (0-indiziert)?`matrix[1, 2]`;
+Wie wählt man die erste Zeile eines 2D-Arrays `matrix` aus?;`matrix[0, :]` oder `matrix[0]`
+Wie wählt man die dritte Spalte eines 2D-Arrays `matrix` aus?;`matrix[:, 2]`
+Wähle die ersten beiden Zeilen und die Spalten 1 und 2 (0-indiziert) eines 2D-Arrays `matrix` aus.;`matrix[:2, 1:3]`
+Wie führt man eine elementweise Addition zweier NumPy Arrays `a` und `b` durch?;`a + b`
+Wie führt man eine elementweise Multiplikation zweier NumPy Arrays `a` und `b` durch?;`a * b`
+Wie berechnet man das Punktprodukt (dot product) zweier Vektoren `a` und `b`?;`np.dot(a, b)` oder `a @ b`
+Wie berechnet man das Matrixprodukt zweier Matrizen `A` und `B`?;`np.dot(A, B)` oder `A @ B`
+Wie transponiert man eine Matrix `M`?;`M.T` oder `np.transpose(M)`
+Berechne die Summe aller Elemente im Array `arr`.;`np.sum(arr)` oder `arr.sum()`
+Berechne den Mittelwert der Elemente im Array `arr`.;`np.mean(arr)` oder `arr.mean()`
+Berechne die Standardabweichung der Elemente im Array `arr`.;`np.std(arr)` oder `arr.std()`
+Finde den Maximalwert im Array `arr`.;`np.max(arr)` oder `arr.max()`
+Finde den Index des Maximalwerts im Array `arr`.;`np.argmax(arr)`
+Wie formt man ein 1D-Array mit 6 Elementen in ein 2x3-Array um?;`arr.reshape((2, 3))`
+Was macht `arr.flatten()`?;Gibt eine flache 1D-Kopie des Arrays zurück.
+Wie verketten (concatenate) man zwei NumPy Arrays `arr1` und `arr2` horizontal?;`np.hstack((arr1, arr2))` oder `np.concatenate((arr1, arr2), axis=1)`
+Wie verketten (concatenate) man zwei NumPy Arrays `arr1` und `arr2` vertikal?;`np.vstack((arr1, arr2))` oder `np.concatenate((arr1, arr2), axis=0)`
+Wähle alle Elemente aus dem Array `arr` aus, die größer als 0 sind.;`arr[arr > 0]` (Boolean Indexing)
+Setze alle Elemente im Array `arr`, die kleiner als 0 sind, auf 0.;`arr[arr < 0] = 0`
+"Was ist ""Broadcasting"" in NumPy?";Die Fähigkeit von NumPy, Operationen auf Arrays mit unterschiedlichen Formen durchzuführen, indem das kleinere Array virtuell erweitert wird.
+Gib ein Beispiel für Broadcasting (Array mit Skalar addieren).;`arr + 5`
+Was ist der Unterschied zwischen `np.copy()` und einer einfachen Zuweisung `arr2 = arr1` bei NumPy Arrays?;`np.copy()` erstellt eine echte Kopie, während eine Zuweisung nur eine Referenz auf das gleiche Array erstellt (Änderungen in `arr2` würden `arr1` beeinflussen).
+Wie erstellt man ein Array mit normalverteilten Zufallszahlen?;`np.random.randn(shape)` (Standardnormalverteilung) oder `np.random.normal(mean, std_dev, shape)`
+Wie setzt man den Seed für den Zufallszahlengenerator in NumPy?;`np.random.seed(value)` (Wichtig für Reproduzierbarkeit).
+Berechne den Kehrwert jedes Elements in einem Array `arr`.;`1 / arr`
+Was macht `np.where(condition, x, y)`?;Gibt Elemente aus `x` zurück, wo `condition` True ist, sonst aus `y`.
+;
+# ABSCHNITT 3: PANDAS - DATENANALYSE;
+Wie importiert man Pandas konventionell?;`import pandas as pd`
+Was ist eine Pandas Series?;Eine eindimensionale, indizierte Datenstruktur, ähnlich einer Spalte in einer Tabelle oder einem NumPy Array mit Labels.
+Wie erstellt man eine Series aus einer Liste von Werten?;`pd.Series([10, 20, 30])`
+Wie erstellt man eine Series mit einem benutzerdefinierten Index?;`pd.Series([10, 20, 30], index=['a', 'b', 'c'])`
+Was ist ein Pandas DataFrame?;Eine zweidimensionale, tabellarische Datenstruktur mit Zeilen- und Spaltenindizes, ähnlich einer Datenbanktabelle oder einer Excel-Tabelle.
+Wie erstellt man einen DataFrame aus einem Dictionary von Listen?;"`data = {'col1': [1, 2], 'col2': [3, 4]};  df = pd.DataFrame(data)`"
+Wie lädt man eine CSV-Datei namens `data.csv` in einen DataFrame?;`df = pd.read_csv('data.csv')`
+Wie lädt man eine Excel-Datei namens `data.xlsx` in einen DataFrame?;`df = pd.read_excel('data.xlsx')`
+Wie zeigt man die ersten 5 Zeilen eines DataFrames `df` an?;`df.head()`
+Wie zeigt man die letzten 5 Zeilen eines DataFrames `df` an?;`df.tail()`
+Wie zeigt man eine zufällige Stichprobe von 3 Zeilen aus einem DataFrame `df` an?;`df.sample(3)`
+Wie erhält man eine Zusammenfassung der Informationen über einen DataFrame `df` (Spaltentypen, fehlende Werte, Speicherverbrauch)?;`df.info()`
+Wie erhält man deskriptive Statistiken (Mittelwert, Standardabweichung, Min, Max etc.) für numerische Spalten eines DataFrames `df`?;`df.describe()`
+Wie greift man auf eine einzelne Spalte 'Price' eines DataFrames `df` zu?;`df['Price']` oder `df.Price`
+Wie greift man auf mehrere Spalten ('Price', 'Volume') eines DataFrames `df` zu?;`df[['Price', 'Volume']]`
+Wie wählt man eine einzelne Zeile eines DataFrames `df` anhand ihres numerischen Index (z.B. die dritte Zeile, 0-indiziert) aus?;`df.iloc[2]`
+Wie wählt man eine einzelne Zeile eines DataFrames `df` anhand ihres Labels (z.B. '2023-01-01') aus?;`df.loc['2023-01-01']`
+Wie wählt man Zeilen aus, bei denen die Spalte 'Volume' größer als 100 ist?;`df[df['Volume'] > 100]`
+Wie wählt man Zeilen aus, bei denen 'Price' größer als 10 und 'Volume' kleiner als 200 ist?;`df[(df['Price'] > 10) & (df['Volume'] < 200)]`
+Wie fügt man eine neue Spalte 'Return' zu `df` hinzu, die 'Close' / 'Open' - 1 ist?;`df['Return'] = df['Close'] / df['Open'] - 1`
+Wie löscht man eine Spalte 'OldColumn' aus einem DataFrame `df`?;`df.drop('OldColumn', axis=1, inplace=True)` oder `del df['OldColumn']`
+Wie überprüft man, ob in einem DataFrame `df` fehlende Werte vorhanden sind, und zählt diese pro Spalte?;`df.isnull().sum()`
+Wie entfernt man alle Zeilen aus `df`, die mindestens einen fehlenden Wert enthalten?;`df.dropna(inplace=True)`
+Wie füllt man fehlende Werte in der Spalte 'Sales' mit dem Mittelwert dieser Spalte auf?;`df['Sales'].fillna(df['Sales'].mean(), inplace=True)`
+Wie füllt man fehlende Werte in der Spalte 'Category' mit dem Modus (häufigsten Wert) auf?;`df['Category'].fillna(df['Category'].mode()[0], inplace=True)`
+Wie führt man eine Group-by-Operation auf einem DataFrame `df` durch, um den Mittelwert der 'Sales' pro 'Product'-Kategorie zu berechnen?;`df.groupby('Product')['Sales'].mean()`
+Wie führt man eine Aggregation aus, um den Mittelwert, die Summe und die Anzahl für 'Sales' pro 'Product' zu erhalten?;`df.groupby('Product')['Sales'].agg(['mean', 'sum', 'count'])`
+Wie konvertiert man eine Spalte 'DateString' in `df` zu einem DateTime-Objekt?;`df['Date'] = pd.to_datetime(df['DateString'])`
+Wie setzt man die 'Date'-Spalte als Index eines DataFrames `df` und stellt sicher, dass sie sortiert ist?;"`df.set_index('Date', inplace=True);  df.sort_index(inplace=True)`"
+Wie berechnet man die prozentuale Veränderung der Spalte 'Close' in `df`?;`df['Close'].pct_change()`
+Wie berechnet man die logarithmische Rendite (log return) der Spalte 'Close' in `df`?;`np.log(df['Close'] / df['Close'].shift(1))`
+Berechne den gleitenden Durchschnitt (Simple Moving Average, SMA) über 20 Perioden der Spalte 'Price' in `df`.;`df['Price'].rolling(window=20).mean()`
+Berechne die exponentiell gewichtete gleitende Durchschnitt (Exponential Moving Average, EMA/EWMA) über 10 Perioden der Spalte 'Price'.;`df['Price'].ewm(span=10, adjust=False).mean()`
+Was ist der Zweck der `.shift()`-Methode in Pandas Zeitreihen?;Verschiebt Daten um eine bestimmte Anzahl von Perioden vor oder zurück. Nützlich für Renditeberechnungen oder Lags.
+Wie berechnet man die Korrelationsmatrix eines DataFrames `df`?;`df.corr()`
+Wie führt man einen Merge (inner join) zweier DataFrames `df1` und `df2` basierend auf einer gemeinsamen Spalte 'ID' durch?;`pd.merge(df1, df2, on='ID', how='inner')`
+Was ist der Unterschied zwischen `pd.merge()` und `df.join()`?;"`merge()` wird typischerweise für Spalten verwendet;  `join()` wird oft für Indizes verwendet oder wenn eine Spalte in einem DF dem Index im anderen entspricht. `merge()` ist flexibler."
+Wie resamplet man tägliche Daten in wöchentliche Daten (Wochenende als Endpunkt), wobei der Mittelwert der 'Volume'-Spalte verwendet wird?;`df['Volume'].resample('W').mean()`
+Wie wählt man alle Daten aus dem Jahr 2022 aus einem zeitindizierten DataFrame `df`?;`df['2022']`
+Wie wählt man alle Daten aus dem Monat März aus einem zeitindizierten DataFrame `df`?;`df[df.index.month == 3]` oder `df.loc['2023-03']` (wenn 2023 relevant)
+Was macht `df.apply(func)`?;Wendet eine Funktion `func` entlang einer Achse (Zeile oder Spalte) des DataFrames an.
+Gib ein Beispiel für die Verwendung von `df.apply()` um eine benutzerdefinierte Funktion `my_func` auf jede Zeile anzuwenden.;`df.apply(my_func, axis=1)`
+Wie pivotierst du einen DataFrame (`df.pivot_table`)?;`df.pivot_table(values='Wert', index='Datum', columns='Kategorie', aggfunc='mean')`
+Wie stapelst du (stack) oder entstapelst (unstack) du einen DataFrame?;"`df.stack()` verwandelt Spalten in Zeilen (MultiIndex);  `df.unstack()` macht das Gegenteil."
+Was ist der Unterschied zwischen `.loc` und `.iloc` zum Indexieren?;"`.loc` indexiert nach Labels (Name des Index/Spalte);  `.iloc` indexiert nach Integer-Positionen (0-basiert)."
+Wie kann man Duplicate in einem DataFrame `df` basierend auf allen Spalten finden und entfernen?;`df.drop_duplicates(inplace=True)`
+Wie kann man Duplicate in einem DataFrame `df` basierend auf der Spalte 'ID' finden und nur die erste Beibehaltung?;`df.drop_duplicates(subset=['ID'], keep='first', inplace=True)`
+Wie importiert man Matplotlib's `pyplot` Modul konventionell?;`import matplotlib.pyplot as plt`
+Wie erstellt man ein einfaches Liniendiagramm für `x_data` und `y_data`?;"`plt.plot(x_data, y_data);  plt.show()`"
+Wie fügt man einem Diagramm einen Titel 'Mein Diagramm' hinzu?;`plt.title('Mein Diagramm')`
+Wie beschriftet man die X-Achse mit 'Zeit' und die Y-Achse mit 'Wert'?;"`plt.xlabel('Zeit');  plt.ylabel('Wert')`"
+Wie fügt man eine Legende zu einem Diagramm hinzu, wenn man mehrere Linien geplottet hat?;Jeder `plt.plot()`-Aufruf bekommt ein `label='...'`-Argument, dann `plt.legend()` aufrufen.
+Wie ändert man die Linienfarbe auf rot und den Linienstil auf gestrichelt?;`plt.plot(x, y, color='red', linestyle='--')`
+Wie speichert man ein Diagramm als PNG-Datei namens `chart.png`?;`plt.savefig('chart.png')`
+Wie erstellt man ein Streudiagramm (Scatter Plot) von `x` und `y`?;`plt.scatter(x, y)`
+Wie erstellt man ein Histogramm der Daten in `data_series` mit 30 Bins?;`plt.hist(data_series, bins=30)`
+Wie erstellt man mehrere Unterplots (Subplots) in einem Figure (z.B. 2 Zeilen, 1 Spalte)?;`fig, axes = plt.subplots(nrows=2, ncols=1)`v
+Wie fügt man einem Unterplot `ax` einen Titel hinzu?;`ax.set_title('Titel des Unterplots')`
+Wie importiert man Seaborn konventionell?;`import seaborn as sns`
+Wann ist Seaborn vorteilhaft gegenüber reinem Matplotlib?;Für komplexere statistische Visualisierungen, ästhetisch ansprechendere Standardstile und oft weniger Code.
+Erstelle ein Boxplot der Spalte 'Price' aus dem DataFrame `df`.;`sns.boxplot(y='Price', data=df)`
+Erstelle ein Boxplot der 'Price' nach 'Category' aus dem DataFrame `df`.;`sns.boxplot(x='Category', y='Price', data=df)`
+Erstelle ein Heatmap der Korrelationsmatrix `corr_matrix`, inklusive Beschriftungen der Werte und einer Farbpalette.;`sns.heatmap(corr_matrix, annot=True, cmap='coolwarm')`
+Was ist ein `distplot` in Seaborn (jetzt oft `histplot` oder `kdeplot`)?;Eine Kombination aus Histogramm und Kernel Density Estimate (KDE) für die Verteilung einer Variablen.
+Erstelle ein Streudiagramm von 'Feature1' vs. 'Feature2' aus `df` und färbe die Punkte nach 'Category'.;`sns.scatterplot(x='Feature1', y='Feature2', hue='Category', data=df)`
+Erstelle ein Pairplot aus `df` (nur numerische Spalten);`sns.pairplot(df)`
+Was ist ein Pairplot und wann ist er nützlich?;Zeigt Streudiagramme für jedes Spaltenpaar und Histogramme/KDEs für die einzelnen Spalten. Nützlich zur schnellen Untersuchung von Beziehungen und Verteilungen.
+Wie kann man den Stil der Seaborn-Plots ändern (z.B. zu 'darkgrid')?;`sns.set_style('darkgrid')`
+Wie importiert man die Statistik-Unterbibliothek von SciPy?;`from scipy import stats`
+Was ist der Zweck von SciPy?;Stellt ein breites Spektrum an Algorithmen für wissenschaftliches und technisches Computing bereit (Optimierung, lineare Algebra, Signalverarbeitung, Statistik etc.).
+Wie berechnet man den T-Test für zwei unabhängige Stichproben `sample1` und `sample2`?;`stats.ttest_ind(sample1, sample2)`
+Wie berechnet man die Pearson-Korrelation zwischen zwei Arrays `x` und `y` mit SciPy?;`stats.pearsonr(x, y)` (gibt Korrelation und p-Wert zurück)
+Wie führt man eine lineare Regression mit `scipy.stats.linregress` durch?;`slope, intercept, r_value, p_value, std_err = stats.linregress(x, y)`
+Was ist der Zweck des `optimize`-Moduls in SciPy?;Bereitstellung von Algorithmen zur Minimierung/Maximierung von Funktionen (z.B. Portfolio-Optimierung).
+Was ist der Zweck des `interpolate`-Moduls in SciPy?;Bereitstellung von Funktionen zur Interpolation von Daten.
+Wie importiert man die lineare Algebra-Unterbibliothek von SciPy?;`from scipy import linalg`
+Wie löst man ein lineares Gleichungssystem `Ax = b` für `x`, wenn `A` und `b` Matrizen/Vektoren sind?;`x = linalg.solve(A, b)`
+Wie berechnet man die Determinante einer Matrix `A`?;`linalg.det(A)`
+Wie berechnet man die Inverse einer Matrix `A`?;`linalg.inv(A)`
+Wie berechnet man die Eigenwerte und Eigenvektoren einer Matrix `A`?;`eigenvalues, eigenvectors = linalg.eig(A)`
+Wann wäre die Berechnung von Eigenwerten und Eigenvektoren in der Finanzwelt nützlich?;Für die Hauptkomponentenanalyse (PCA) oder die Analyse von Kovarianzmatrizen in der Portfoliotheorie.
+Wie berechnet man die Wahrscheinlichkeitsdichtefunktion (PDF) einer Normalverteilung an einem Punkt `x` mit gegebenem Mittelwert `mu` und Standardabweichung `sigma`?;`stats.norm.pdf(x, loc=mu, scale=sigma)`
+Wie berechnet man die kumulative Verteilungsfunktion (CDF) einer Normalverteilung an einem Punkt `x`?;`stats.norm.cdf(x, loc=mu, scale=sigma)`
+Wie generiert man Zufallszahlen aus einer Normalverteilung mit `loc` (Mittelwert) und `scale` (Standardabweichung)?;`stats.norm.rvs(loc=mu, scale=sigma, size=num_samples)`
+Was ist der Zweck der `scipy.stats.linregress` Funktion?;Führt eine einfache lineare Regression durch und gibt Steigung, Achsenabschnitt, R-Wert, p-Wert und Standardfehler zurück.
+Was ist der p-Wert in der Statistik?;Die Wahrscheinlichkeit, ein Ergebnis zu beobachten, das mindestens so extrem ist wie das beobachtete, unter der Annahme, dass die Nullhypothese wahr ist.
+Wie importiert man das Optimierungsmodul von SciPy?;`from scipy import optimize`
+Wann würde man `scipy.optimize.minimize` verwenden?;Um eine Funktion (z.B. Portfolio-Risiko) unter bestimmten Bedingungen (z.B. Rendite-Ziel, Gewichtungsbeschränkungen) zu minimieren.
+Was ist der Zweck der `scipy.optimize.fmin_l_bfgs_b` Funktion?;Ein Algorithmus zur Minimierung von Funktionen, oft verwendet für unbeschränkte oder box-beschränkte Probleme.
+Was ist der Zweck der `scipy.optimize.curve_fit` Funktion?;Zur Anpassung einer Funktion an Datenpunkte (z.B. Kalibrierung von Modellen).
+Wie importiert man das Signalverarbeitungsmodul von SciPy?;`from scipy import signal`
+Was ist der Zweck des `scipy.signal.convolve`?;Berechnet die Faltung zweier diskreter 1D-Sequenzen, nützlich für Filterung und Glättung.
+Was ist der Zweck von Filtern in der Signalverarbeitung im Kontext von Finanzdaten?;Um Rauschen zu entfernen oder bestimmte Frequenzkomponenten aus Zeitreihen zu extrahieren (z.B. Trend vs. Saisonalität).
+Was ist der Unterschied zwischen einem Generator und einer normalen Funktion?;Ein Generator verwendet `yield` statt `return` und liefert Werte iterativ, spart Speicher bei großen Datensätzen.
+Gib ein Beispiel für einen einfachen Generator, der Zahlen quadriert.;`def squares_gen(n): for i in range(n): yield i**2`
+Was ist ein Decorator in Python und wofür wird er verwendet?;Eine Funktion, die eine andere Funktion umschließt und deren Verhalten erweitert, ohne den Quellcode der umschlossenen Funktion zu ändern. Nützlich für Logging, Caching, Berechtigungsprüfung.
+Gib ein Beispiel für einen einfachen Decorator.;"`def my_decorator(func): def wrapper(): print(""Before"");  func();  print(""After"");  return wrapper;  @my_decorator def say_hello(): print(""Hello"")`"
+Erkläre das Prinzip der Objektorientierten Programmierung (OOP) in Python.;Ein Programmierparadigma, das den Code um Objekte herum organisiert, die Daten (Attribute) und Funktionen (Methoden) kapseln.
+Was ist eine Klasse in Python?;Eine Blaupause zur Erstellung von Objekten, die Attribute und Methoden definiert.
+Was ist ein Objekt (Instanz) in Python?;Eine konkrete Realisierung einer Klasse.
+Was ist die `__init__` Methode und wann wird sie aufgerufen?;Der Konstruktor einer Klasse, der beim Erstellen eines neuen Objekts automatisch aufgerufen wird.
+Was ist `self` in einer Klassenmethode?;Die Referenz auf die Instanz des Objekts selbst.
+Was ist Vererbung in OOP?;Eine Klasse (Kindklasse) kann Attribute und Methoden einer anderen Klasse (Elternklasse) erben.
+Was ist Polymorphie in OOP?;Die Fähigkeit von Objekten verschiedener Klassen, auf den gleichen Methodennamen unterschiedlich zu reagieren.
+Was ist Kapselung in OOP?;Die Bündelung von Daten und Methoden, die auf diese Daten wirken, in einer einzigen Einheit (Klasse), und das Verstecken interner Details.
+Was ist ein Kontextmanager in Python? Gib ein Beispiel.;Ein Objekt, das die Methoden `__enter__` und `__exit__` implementiert und die Ressourcenzuordnung/-freigabe automatisch verwaltet (z.B. `with open(...)`).
+Was ist der Zweck des `collections`-Moduls? Nenne ein paar nützliche Klassen.;Stellt spezialisierte Container-Datentypen bereit. Z.B. `defaultdict`, `Counter`, `deque`.
+Wann wäre `collections.defaultdict` nützlich?;Wenn man ein Dictionary hat, bei dem man sicherstellen will, dass ein Standardwert zurückgegeben wird, wenn ein Schlüssel nicht existiert, anstatt eines `KeyError`.
+Wann wäre `collections.Counter` nützlich?;Zum einfachen Zählen von Hashable-Objekten (z.B. Häufigkeit von Wörtern in einem Text).
+Was ist ein `namedtuple`?;Ein Tupel, bei dem die Elemente auch über Namen angesprochen werden können, was den Code lesbarer macht.
+Was ist der Zweck des `datetime`-Moduls?;Zum Arbeiten mit Datum und Uhrzeit.
+Wie erhält man das aktuelle Datum und die aktuelle Uhrzeit?;"`import datetime;  datetime.datetime.now()`"
+Wie formatiert man ein `datetime`-Objekt in einen String (z.B. 'JJJJ-MM-TT')?;`dt_object.strftime('%Y-%m-%d')`
+Wie parst man einen String '2023-10-26' in ein `datetime`-Objekt?;`datetime.datetime.strptime('2023-10-26', '%Y-%m-%d')`
+Was ist eine Virtual Environment in Python und wofür wird sie verwendet?;Eine isolierte Python-Umgebung, die es ermöglicht, Projektabhängigkeiten getrennt zu verwalten, um Konflikte zu vermeiden.
+Wie erstellt man eine Virtual Environment mit `venv`?;`python -m venv myenv`
+Wie aktiviert man eine Virtual Environment unter Linux/macOS?;`source myenv/bin/activate`
+Wie installiert man ein Paket in einer Virtual Environment?;`pip install package_name`
+Was ist der Zweck der `requirements.txt` Datei?;Listet alle Pakete und deren Versionen auf, die ein Projekt benötigt, um reproduzierbare Umgebungen zu schaffen.
+Wie generiert man eine `requirements.txt` Datei aus der aktuellen Umgebung?;`pip freeze > requirements.txt`
+Wie installiert man Pakete aus einer `requirements.txt` Datei?;`pip install -r requirements.txt`
+"Was ist ein ""Linter"" (z.B. Flake8) und wofür ist er gut?";Ein Tool, das Code statisch analysiert, um Stilprobleme, potenzielle Fehler und Best-Practice-Verletzungen zu erkennen.
+Warum ist PEP 8 wichtig?;Die offizielle Stilrichtlinie für Python-Code, die zu lesbarerem und konsistenterem Code beiträgt.
+Was ist Unit Testing und warum ist es wichtig?;Das Testen einzelner, kleinster Code-Einheiten (Funktionen, Methoden), um sicherzustellen, dass sie korrekt funktionieren. Wichtig für Code-Qualität und Refactoring.
+Wie verwendet man das `unittest`-Modul zum Schreiben von Tests?;Erstellt Klassen, die von `unittest.TestCase` erben, und definiert Testmethoden, die mit `test_` beginnen.
+Was ist der Zweck des `logging`-Moduls?;Bietet ein flexibles Framework zur Ausgabe von Statusmeldungen, Warnungen und Fehlern während der Programmausführung.
+Nenne die 5 Logging-Level in aufsteigender Reihenfolge der Schwere.;`DEBUG`, `INFO`, `WARNING`, `ERROR`, `CRITICAL`.
+Wie loggt man eine Informationsnachricht?;"`import logging;  logging.info('Dies ist eine Information.')`"
+Was ist eine rekursive Funktion?;Eine Funktion, die sich selbst aufruft, um ein Problem zu lösen.
+Gib ein Beispiel für eine rekursive Funktion zur Berechnung der Fakultät.;`def factorial(n): if n == 0: return 1 else: return n * factorial(n-1)`
+Wann kann Rekursion problematisch sein?;Bei tiefen Rekursionen kann ein `RecursionError` auftreten (Stack Overflow).
+Was ist Caching in Python und wann wäre es nützlich?;Speichern des Ergebnisses eines Funktionsaufrufs, um es bei zukünftigen Aufrufen mit denselben Argumenten wiederzuverwenden. Nützlich für rechenintensive Funktionen.
+Wie kann man eine Funktion mit `functools.lru_cache` cachen?;"`from functools import lru_cache;  @lru_cache(maxsize=None) def my_expensive_function(...):`"
+Was ist der Zweck von `*args` und `**kwargs` in einer Funktionssignatur?;"`*args` sammelt beliebig viele positionale Argumente in einem Tupel;  `**kwargs` sammelt beliebig viele Schlüsselwortargumente in einem Dictionary."
+Was ist eine Lambda-Funktion?;Eine kleine, anonyme Funktion, die nur einen Ausdruck enthalten kann.
+Gib ein Beispiel für eine Lambda-Funktion, die zwei Zahlen addiert.;`add = lambda x, y: x + y`
+Wann würde man eine Lambda-Funktion verwenden?;Für einfache, kurzlebige Funktionen, oft als Argumente für `map()`, `filter()`, `sort()`.
+Wie verwendet man `map()` mit einer Funktion und einer Liste?;`list(map(function, list_of_items))`
+Wie verwendet man `filter()` mit einer Funktion und einer Liste?;`list(filter(function, list_of_items))`
+Was ist der Global Interpreter Lock (GIL) in CPython?;Ein Mechanismus, der sicherstellt, dass zu jedem Zeitpunkt nur ein Thread Python-Bytecode ausführt, auch auf Multi-Core-CPUs.
+Welche Auswirkungen hat der GIL auf Multithreading in Python?;Beschränkt die echte Parallelität für CPU-gebundene Aufgaben. Für I/O-gebundene Aufgaben ist Multithreading dennoch vorteilhaft.
+Welche Alternativen gibt es zum Multithreading für CPU-gebundene Parallelität in Python?;Multiprocessing (verwendet separate Prozesse, um den GIL zu umgehen), oder Bibliotheken, die C-Erweiterungen nutzen (NumPy, Pandas).
+Was ist der Zweck des `json`-Moduls?;Zum Enkodieren und Dekodieren von JSON-Daten (JavaScript Object Notation).
+Wie serialisiert man ein Python Dictionary `my_dict` in einen JSON-String?;"`import json;  json.dumps(my_dict)`"
+Wie deserialisiert man einen JSON-String `json_string` in ein Python Dictionary?;`json.loads(json_string)`
+Was ist der Zweck des `csv`-Moduls?;Zum einfachen Lesen und Schreiben von CSV-Dateien.
+Wie liest man eine CSV-Datei mit dem `csv`-Modul?;"`import csv;  with open('file.csv', 'r') as f: reader = csv.reader(f);  for row in reader: print(row)`"
+Was ist der Zweck des `os`-Moduls?;Bietet Funktionen für die Interaktion mit dem Betriebssystem (Dateisystem, Umgebungsvariablen).
+Wie erhält man das aktuelle Arbeitsverzeichnis?;"`import os;  os.getcwd()`"
+Wie ändert man das aktuelle Arbeitsverzeichnis?;`os.chdir('/path/to/directory')`
+Wie erstellt man ein neues Verzeichnis namens 'my_dir'?;`os.mkdir('my_dir')`
+Wie listet man den Inhalt eines Verzeichnisses auf?;`os.listdir('.')`
+Was ist der Zweck des `sys`-Moduls?;Bietet Zugriff auf Systemparameter und -funktionen (z.B. Python-Version, Kommandozeilenargumente).
+Wie greift man auf Kommandozeilenargumente zu, die einem Python-Skript übergeben wurden?;"`import sys;  sys.argv`"
+Was ist der Zweck des `re`-Moduls (Regular Expressions)?;Für komplexe Textmustererkennung und -manipulation.
+Wie findet man alle Vorkommen eines Musters 'word' in einem String `text`?;"`import re;  re.findall('word', text)`"
+Wie ersetzt man alle Vorkommen von 'old' durch 'new' in einem String `text`?;`re.sub('old', 'new', text)`
+"Was ist ein Raw String (z.B. `r""C:\path\to\file""`) und wann ist er nützlich?";Ein String, bei dem Backslashes nicht als Escape-Zeichen interpretiert werden. Besonders nützlich für reguläre Ausdrücke und Windows-Pfade.
+Was ist `yfinance` und wofür wird es verwendet?;Eine Bibliothek zum Herunterladen von historischen Finanzdaten von Yahoo! Finance.
+"Wie lädt man historische Schlusskurse für ""AAPL"" der letzten 5 Jahre herunter?";"`import yfinance as yf;  ticker = yf.Ticker(""AAPL"");  hist = ticker.history(period=""5y"");  close_prices = hist['Close']`"
+Was ist `ARCH` (in `arch`) und wofür ist es relevant?;Eine Python-Bibliothek für ökonometrische Modellierung, insbesondere GARCH-Modelle für Volatilitätsprognosen.
+Wann würde man ein GARCH-Modell verwenden?;Zur Modellierung der Zeitabhängigkeit der Volatilität von Finanzzeitreihen (z.B. Aktienrenditen).
+Was ist die Bibliothek `statsmodels` und wofür wird sie verwendet?;Eine Bibliothek für statistische Modellierung, ökonometrische Analysen und statistische Tests.
+Wie führt man eine OLS (Ordinary Least Squares) Regression mit `statsmodels` durch?;"`import statsmodels.api as sm;  model = sm.OLS(y, X);  results = model.fit()`"
+Wie greift man auf die Regressionskoeffizienten aus einem `statsmodels` Ergebnisobjekt zu?;`results.params`
+Wie greift man auf den R-Squared-Wert aus einem `statsmodels` Ergebnisobjekt zu?;`results.rsquared`
+Welche Arten von Zeitreihenmodellen bietet `statsmodels` (Nenne 2-3 Beispiele)?;ARIMA, SARIMAX, VAR, GARCH.
+Was ist eine Monte-Carlo-Simulation und wofür wird sie im Finanzbereich eingesetzt?;Eine Methode, die Zufallszahlen verwendet, um Unsicherheit zu modellieren. Eingesetzt für Optionspreismodelle (Black-Scholes), Risikoanalyse (VaR), Portfoliomanagement.
+Wie simuliert man einen einfachen Random Walk in Python?;"`returns = np.random.normal(0, 0.01, num_steps);  prices = initial_price * np.exp(np.cumsum(returns))`"
+Was ist das `zipline`-Paket und wofür ist es?;Eine Event-Driven Backtesting-Bibliothek für algorithmischen Handel.
+Was ist die Bedeutung von Alpha und Beta im Kontext von Finanzportfolios?;"Alpha ist die risikobereinigte Überrendite im Vergleich zu einem Referenzindex;  Beta ist ein Maß für das systematische Risiko eines Vermögenswerts im Verhältnis zum Gesamtmarkt."
+Wie berechnet man die Annualisierte Volatilität aus täglichen Renditen?;"`daily_std = returns.std();  annualized_vol = daily_std * np.sqrt(252)` (Annahme: 252 Handelstage/Jahr)"
+Wie berechnet man die Sharpe Ratio eines Portfolios?;`(Portfoliorendite - Risikofreier Zinssatz) / Portfolio-Standardabweichung`
+Was ist ein Value at Risk (VaR) und wie kann er in Python berechnet werden?;Eine Schätzung des maximalen Verlustes, den ein Portfolio mit einer bestimmten Wahrscheinlichkeit über einen bestimmten Zeitraum erleiden könnte. Kann historisch, parametrisch oder mittels Monte-Carlo berechnet werden.
+Wie kann man eine historische VaR-Schätzung in Python durchführen?;"`sorted_returns = portfolio_returns.sort_values();  var_99 = sorted_returns.quantile(0.01)`"
+Was ist der Unterschied zwischen einem statischen und einem dynamischen Portfoliomanagement?;"Statisch: Portfolio wird einmal festgelegt und nicht angepasst;  Dynamisch: Portfolio wird regelmäßig rebalanciert oder angepasst."
+Was ist der Zweck des `cvxpy` oder `pyomo` Pakets?;Bibliotheken für konvexe Optimierung, oft verwendet für Portfoliooptimierung, Asset Allocation unter Constraints.
+"Was ist ein ""Backtesting"" in Quantitative Finance?";Die Anwendung einer Handelsstrategie auf historische Daten, um ihre potenzielle Leistung zu bewerten.
+Was sind einige Herausforderungen beim Backtesting?;Overfitting, Survivorship Bias, Look-ahead Bias, Transaktionskosten, Liquiditätsprobleme.
+"Was ist die Bedeutung von ""Slippage"" im Trading?";Der Unterschied zwischen dem erwarteten Preis eines Trades und dem tatsächlichen Preis, zu dem der Trade ausgeführt wird.
+"Was ist ""High-Frequency Trading"" (HFT)?";Eine Art von algorithmischem Handel, der sehr kurze Zeiträume nutzt, um von kleinen Preisunterschieden zu profitieren.
+Was ist die Bedeutung von `NaN` (Not a Number) in Pandas und NumPy?;Repräsentiert fehlende oder undefinierte numerische Werte.
+Wie geht man mit `NaN`-Werten in Zeitreihen um, bevor man Renditen berechnet?;Oft mit `.dropna()` entfernen oder mit `.fillna()` auffüllen (z.B. mit 0 oder dem vorherigen Wert `ffill()`).
+"Was ist die Bedeutung von ""Stationarität"" in Zeitreihenanalyse?";Eine Zeitreihe ist stationär, wenn ihre statistischen Eigenschaften (Mittelwert, Varianz, Autokorrelation) über die Zeit konstant sind.
+Warum ist Stationarität wichtig für viele ökonometrische Modelle?;Viele Zeitreihenmodelle (z.B. ARIMA) setzen Stationarität voraus, um gültige Inferenz zu ermöglichen.
+Wie testet man auf Stationarität (Nenne einen Test)?;Augmented Dickey-Fuller (ADF) Test, Kwiatkowski-Phillips-Schmidt-Shin (KPSS) Test.
+Wie differenziert man eine Zeitreihe, um sie stationär zu machen?;`df['Series'].diff().dropna()`
+"Was ist ""Cointegration"" und wann ist sie für Quant-Trading relevant?";Wenn zwei oder mehr nicht-stationäre Zeitreihen eine langfristige, stabile Beziehung zueinander haben, sodass ihre lineare Kombination stationär ist. Relevant für Paartrading-Strategien.
+Was ist der Zweck des `scikit-learn` Moduls in Bezug auf Machine Learning?;Bietet Werkzeuge für prädiktive Datenanalyse (Klassifikation, Regression, Clustering).
+Wie importiert man einen Lineare-Regression-Modell in `scikit-learn`?;`from sklearn.linear_model import LinearRegression`
+Wie instanziiert man einen Lineare-Regression-Modell?;`model = LinearRegression()`
+Wie trainiert man ein `scikit-learn` Modell mit Trainingsdaten `X_train`, `y_train`?;`model.fit(X_train, y_train)`
+Wie macht man Vorhersagen mit einem trainierten `scikit-learn` Modell `model` auf neuen Daten `X_test`?;`predictions = model.predict(X_test)`
+Wie teilt man Daten in Trainings- und Testsets auf?;"`from sklearn.model_selection import train_test_split;  X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)`"
+"Was ist ""Overfitting"" in Machine Learning?";Wenn ein Modell zu gut auf die Trainingsdaten passt, aber schlecht auf neue, ungesehene Daten generalisiert.
+"Was ist ""Cross-Validation"" und wofür wird es verwendet?";Eine Technik zur Bewertung der Modellleistung und zur Vermeidung von Overfitting, indem der Datensatz in mehrere Trainings- und Validierungssets aufgeteilt wird.
+Nenne eine gängige Metrik zur Bewertung von Regressionsmodellen.;Mean Squared Error (MSE), Root Mean Squared Error (RMSE), R-squared.
+Nenne eine gängige Metrik zur Bewertung von Klassifikationsmodellen.;Accuracy, Precision, Recall, F1-Score, ROC AUC.
+Was ist der Zweck des `numba`-Pakets?;Ein JIT-Compiler (Just-In-Time) für Python, der Python-Code in schnellen Maschinencode umwandelt, oft nützlich für numerische Schleifen.
+Wann wäre `numba` besonders nützlich?;Für rechenintensive Schleifen und numerische Algorithmen, die außerhalb von NumPy oder Pandas nativ in Python geschrieben sind.
+Was ist ein Futures-Kontrakt?;Eine Vereinbarung, einen bestimmten Vermögenswert zu einem zukünftigen Zeitpunkt zu einem vereinbarten Preis zu kaufen oder zu verkaufen.
+Was ist ein Optionskontrakt?;Gibt dem Inhaber das Recht, aber nicht die Verpflichtung, einen Basiswert zu einem bestimmten Preis (Strike Price) an oder vor einem bestimmten Datum zu kaufen (Call) oder zu verkaufen (Put).
+"Was ist ""Vega"" in Bezug auf Optionen?";Ein Sensitivitätsmaß, das angibt, wie stark sich der Optionspreis bei einer Änderung der impliziten Volatilität ändert.
+"Was ist die ""implizite Volatilität""?";Die erwartete zukünftige Volatilität eines Vermögenswerts, abgeleitet aus dem Marktpreis einer Option und einem Optionspreismodell.
+Was ist der Zweck von `plotly` oder `bokeh` im Vergleich zu Matplotlib/Seaborn?;Interaktive Visualisierungen, die direkt im Webbrowser angezeigt werden können und Zoom-, Pan- und Tooltip-Funktionen bieten.
+Wie können `jupyter notebooks` oder `jupyter lab` in den genannten Rollen nützlich sein?;Für interaktive Datenanalyse, Prototyping von Modellen, Sharing von Analysen und Dokumentation von Forschungsergebnissen, da Code, Output und Text kombiniert werden können.
+Was ist der Zweck des `pandas-datareader` Pakets?;Eine Bibliothek zum Abrufen von Finanzdaten aus verschiedenen Online-Quellen (z.B. Quandl, FRED, Yahoo Finance).
+Wie lädt man Zinsdaten von FRED (Federal Reserve Economic Data) mit `pandas-datareader` herunter?;"`from pandas_datareader import data as pdr;  rate = pdr.DataReader('DFF', 'fred', start='2020-01-01')`"
+"Was ist die ""Black-Scholes-Formel"" und wofür wird sie verwendet?";Ein mathematisches Modell zur Preisbestimmung europäischer Optionen auf Nicht-Dividenden-Zahlende Aktien.
+"Was ist die ""Gordon Growth Model"" (Dividenden-Abzinsungsmodell) und wofür wird es verwendet?";Ein Modell zur Schätzung des inneren Werts einer Aktie basierend auf zukünftigen Dividenden.
+Was ist ein CAPM (Capital Asset Pricing Model) und was sagt es aus?;Ein Modell, das die erwartete Rendite eines Vermögenswerts im Verhältnis zu seinem systematischen Risiko (Beta) und dem erwarteten Marktrisiko bestimmt.
+Wie berechnet man Covarianz in NumPy zwischen zwei Arrays `x` und `y`?;`np.cov(x, y)[0, 1]`
+Wie berechnet man die Kovarianzmatrix eines DataFrames `df`?;`df.cov()`
+Was ist der Zweck der Bibliothek `cvxopt` oder `pulp`?;Bibliotheken für konvexe Optimierung oder lineare Programmierung, nützlich für Portfoliooptimierung, Hedging-Strategien.
+"Was ist ein ""Factor Model"" in Quantitative Finance?";Ein Modell, das die Rendite von Vermögenswerten durch Exposition gegenüber verschiedenen Risiko-Faktoren (z.B. Markt, Größe, Wert) erklärt.
+Nenne 2-3 gängige Faktor-Modelle.;CAPM, Fama-French 3-Faktor-Modell, Carhart 4-Faktor-Modell.
+Was ist der Zweck von `joblib` oder `pickle`?;Zum Speichern und Laden von Python-Objekten (z.B. trainierte Machine-Learning-Modelle) auf die Festplatte.
+Wie speichert man ein Python-Objekt `my_object` mit `pickle`?;"`import pickle; with open('object.pkl', 'wb') as f: pickle.dump(my_object, f)`"
+Wie lädt man ein Python-Objekt aus einer Datei `object.pkl` mit `pickle`?;`with open('object.pkl', 'rb') as f: loaded_object = pickle.load(f)`
+Warum sollte man bei der Verwendung von `pickle` vorsichtig sein?;Sicherheitsprobleme beim Laden von `pickle`-Dateien aus unbekannten Quellen, da sie potenziell bösartigen Code ausführen können.
+"Was ist die Bedeutung von ""Feature Engineering"" in Machine Learning für Finanzdaten?";Der Prozess der Erstellung neuer Eingabemerkmale aus bestehenden Daten, um die Leistung eines Machine-Learning-Modells zu verbessern (z.B. gleitende Durchschnitte, Volatilität als Features).
+"Was ist die Bedeutung von ""Data Leakage"" in Machine Learning?";Das versehentliche Einschleusen von Informationen aus dem Testset in das Trainingsset, was zu einer unrealistisch guten Modellleistung führen kann.
